@@ -22,7 +22,7 @@ function accion(){
 	alert("algo")
 	window.plugins.AdMob.showInterstitialAd(
 		true,
-		function(){}
+		function(){},
 		function(e){alert(JSON.stringfy(e));}
 		);
 }
@@ -41,8 +41,8 @@ var app = {
         this.receivedEvent('deviceready');
 
           window.plugins.AdMob.setOptions( {
-          publisherId: "ca-app-pub-5285105637532554/2437836026",
-          interstitialAdId: "ca-app-pub-5285105637532554~8763571220",
+          publisherId: "ca-app-pub-5285105637532554/3076964421",
+          interstitialAdId: "ca-app-pub-5285105637532554/2437836026",
           bannerAtTop: false, // set to true, to put banner at top
           overlap: false, // set to true, to allow banner overlap webview
           offsetTopBar: false, // set to true to avoid ios7 status bar overlap
