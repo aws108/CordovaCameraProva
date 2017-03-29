@@ -16,10 +16,21 @@
  * specific language governing permissions and limitations
  * under the License.
  */
+
+function accion(){
+	window.plugins.AdMob.createInterstitialView();
+	alert("algo")
+	window.plugins.AdMob.showInterstitialAd(
+		true,
+		function(){}
+		function(e){alert(JSON.stringfy(e));}
+		);
+}
 var app = {
     // Application Constructor
     initialize: function() {
         document.addEventListener('deviceready', this.onDeviceReady.bind(this), false);
+        document.getElementById("boto").onclick=accion;
     },
 
     // deviceready Event Handler
